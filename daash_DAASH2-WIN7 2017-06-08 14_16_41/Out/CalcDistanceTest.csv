@@ -1,0 +1,13 @@
+Hours, Minutes, Seconds, Distance, DistanceType, PaceType, PaceHours, PaceMinutes, PaceSeconds, Comment
+ 1,    29,      59,      13.1,     miles,        perMile,  0,         6,           52.137405,   half marathon just under 90 minutes, miles and per miles
+ 1,    29,      59,      13.1,     miles,        perKm,    0,         4,           16.090947,   half marathon just under 90 minutes, miles and per km
+ 1,    29,      59,      13.1,     km,           perMile,  0,        11,            3.271064,   13.1 km just under 90 minutes, km and per miles
+ 1,    29,      59,      13.1,     km,           perKm,    0,         6,           52.137405,   13.1 km just under 90 minutes, km and per km
+ 0,    89,      59,      13.1,     miles,        perMile,  0,         6,           52.137405,   13.1 km just under 90 minutes (no hours), miles and per miles
+ 1,    29,      59,         0,     miles,        perMile,  0,         0,                   0,   pace of zero total seconds should return distance of zero
+-1,    29,      59,         0,     miles,        perMile,  0,         6,           52.137405,   negative hours should just return with Distance zeroed
+ 1,   -29,      59,         0,     miles,        perKm,    0,         4,           16.090947,   negative minutes should just return with Distance zeroed
+ 1,    29,     -59,         0,     km,           perMile,  0,        11,            3.271064,   negative seconds should just return with Distance zeroed
+ 1,    29,      59,         0,     miles,        perMile, -1,         6,           52.137405,   negative paceHours should just return with Distance zeroed
+ 1,    29,      59,         0,     miles,        perKm,    0,        -4,           16.090947,   negative paceMinutes should just return with Distance zeroed
+ 1,    29,      59,         0,     km,           perMile,  0,        11,           -3.271064,   negative paceSeconds should just return with Distance zeroed

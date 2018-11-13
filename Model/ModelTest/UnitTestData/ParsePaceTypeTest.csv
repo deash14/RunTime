@@ -1,0 +1,4 @@
+PaceType,            Comment
+minutesPerMile,      check per mile
+minutesPerKilometer, check per kilometer
+junk,                check bad values default to per kilometer

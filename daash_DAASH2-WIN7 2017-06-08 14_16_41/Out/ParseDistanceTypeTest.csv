@@ -1,0 +1,4 @@
+DistanceType, Comment
+miles,        check miles
+kilometers,   check kilometers
+junk,         check bad values default to kilometers

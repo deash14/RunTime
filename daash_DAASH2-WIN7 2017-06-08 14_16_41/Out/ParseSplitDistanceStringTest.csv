@@ -1,0 +1,6 @@
+splitDistanceString, distance, Comment
+13.1,                13.1,     valid split distance string- with tenths.
+1,                   1,        valid split distance string as a whole number.
+0,                   0,        invalid split distance string at zero
+-26.2,               0,        invalid split distance string- negative.
+3A,                  0,        invalid split distance string- not a number.

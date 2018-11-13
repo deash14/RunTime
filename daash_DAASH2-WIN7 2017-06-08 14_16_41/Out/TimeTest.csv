@@ -1,0 +1,5 @@
+time,         expected,   comment
+"1:29:59",    "1:29:59",  valid time should work
+-1:29:59,     "",         negative time should set expected values to the empty string
+junk,         "",         invalid time should set expected  values to the empty string
+,             ,           if empty string should set expceted values to empty string

@@ -1,0 +1,5 @@
+Distance, ExcpectedDistance, comment
+13.1,     13.1,              should work
+13.1004,  13.1,              only going out to 2 decimal places
+13.115,   13.2,              rounds up
+-13.1,    -13.1,             negative numbers are allowed

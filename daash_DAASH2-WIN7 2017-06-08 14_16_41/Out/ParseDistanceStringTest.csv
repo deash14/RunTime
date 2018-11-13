@@ -1,0 +1,6 @@
+distanceString, distance, Comment
+13.1,           13.1,     valid distance string- with tenths.
+1,              1,        valid distance string as a whole number.
+0,              0,        valid distance string at zero
+-26.2,          0,        invalid distance string- negative.
+3A,             0,        invalid distance string- not a number.

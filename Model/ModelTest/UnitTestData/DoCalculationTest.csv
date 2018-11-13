@@ -1,0 +1,6 @@
+CalcType, Hours, Minutes, Seconds, Distance, DistanceType, PaceType, PaceHours, PaceMinutes, PaceSeconds, ExpectedHours, ExpectedMinutes, ExpectedSeconds, ExpectedDistance, Comment
+pace,     1,     29,      59,      13.1,     miles,        perMile,  0,         0,           0,           0,             6,               52.137405,       0,                 Do pace calculation
+time,     0,      0,       0,      13.1,     miles,        perMile,  0,         6,           52.137405,   1,             29,              59,              0,                 Do time calculation
+distance, 1,     29,      59,         0,     miles,        perMile,  0,         6,           52.137405,   0,             0,               0,               13.1,              Do distance calculation
+invalid,  1,    -29,      59,         0,     miles,        perMile,  0,         6,           52.137405,   1,            29,               5,               13.1,              invalid data
+none,     1,     29,      59,         0,     miles,        perMile,  0,         6,           52.137405,   1,             2,               3,               13.1,              no calc type is selected

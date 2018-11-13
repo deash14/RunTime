@@ -1,0 +1,5 @@
+Distance, Expected,  DistanceType, PaceType, Comment
+ 1,       0.621,     miles,        perKm,    Mismatch test. NOTE: all test only verifies out to 3 decimal places.
+ 1.609,   2.589,     kilometers,   perMile,  Mismatch test.
+ 1.6,     1.6,       kilomters,    perKm,    non-mismatch, metric
+ 1,       1,         miles,        perMile,  non-mismatch, US customary

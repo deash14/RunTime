@@ -1,0 +1,5 @@
+Distance, DistanceString,  Comment
+13.1,      13.1,            valid distance with decimals
+1,         1,               valid distance whole number
+0,         0,               valid distance zeroed
+13.123456, 13.12,           valid distance with decimals rounded down.

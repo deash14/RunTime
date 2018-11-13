@@ -1,0 +1,4 @@
+Expected,  Time,      Distance, DistanceType, PaceType,            Pace,           CalcType, Comment
+"6:52.14", "1:29:59", "13.1",   miles,        minutesPerMile,      "0",            pace,     tests that calculating pace works, also tests OnPaceChange.
+"1:29:59", "0",       "13.1",   miles,        minutesPerKilometer, "4:16.090947",  time,     test that calculating time works, also tests OnTimeChange.
+"13.1",    "1:29:59", "0",      kilometers,   minutesPerMile,      "11:03.271064", distance, test that calculating distance works, also tests OnDistanceChange.

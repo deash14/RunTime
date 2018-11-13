@@ -1,0 +1,5 @@
+expected, distance, comment
+ null,    junk,    bad values should not be allowed leaving what was there previously.  This needs to be the first test.
+ 13.1,    13.1,    postivite numbers should work.  If this is the first test then MSTest expects all "expected" and "distance" values to be numeric.
+ null,   -13.1,    negative numbers should set distance to zero
+ 

@@ -1,0 +1,14 @@
+Hours, Minutes, Seconds, Distance, SplitDistance, PaceHours, PaceMinutes, PaceSeconds, result, Comment
+ 1,    29,      59,      13.1,     1,             5,         6,           52.137405,   true,   all good values (positive and non zeroed)
+ 0,     0,       0,         0,     1,             0,         0,                   0,   true,   all good values (all zeroed but split distance)
+ 0,     0,       0,         0,    -1,             0,         0,                   0,   false,  All zeroed but split distance negative
+-1,    29,      59,      13.1,     1,             0,        11,            3.271064,   false,  hours negative
+ 1,   -29,      59,      13.1,     1,             0,         6,           52.137405,   false,  minutes negative
+ 0,    89,     -59,      13.1,     1,             0,         6,           52.137405,   false,  seconds negative
+ 1,    29,      59,     -13.1,     1,             0,         6,           52.137405,   false,  distance negative
+ 1,    29,      59,         0,    -1,             1,         6,           52.137405,   false,  split distance negative
+ 1,    29,      59,         0,     1,            -5,         4,           16.090947,   false,  pace hours negative
+ 1,    29,      59,         0,     1,             0,       -11,            3.271064,   false,  pace minutes negative
+ 1,    29,      59,         0,     1,             1,         6,          -52.137405,   false,  pace seconds negative
+-1,   -29,     -59,        -0,    -1,            -0,        -4,          -16.090947,   false,  all negative
+ 1,    29,      59,      13.1,     0,             0,         6,           52.137405,   false,  zeroed split distance is not allowed

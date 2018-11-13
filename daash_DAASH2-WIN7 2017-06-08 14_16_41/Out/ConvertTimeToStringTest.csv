@@ -1,0 +1,15 @@
+expected,     hours, minutes, seconds, comment
+"1:29:59",    1,     29,      59,      simple conversion with all three time parts (hours and minutes and seconds)
+"29:59",      0,     29,      59,      simple conversion with only minutes and seconds
+"59",         0,      0,      59,      simple conversion with only seconds
+"1:00:00",    1,      0,       0,      simple conversion with only hours
+"29:00",      0,     29,       0,      simple conversion with only minutes
+"1:29:00",    1,     29,       0,      simple conversion with hours and minutes
+"1:00:59",    1,      0,      59,      simple conversion with hours and seconds
+"1:29:59.12", 1,     29,   59.12,      simple conversion with all three, seconds with tenths and hundredths
+"1:29:59.02", 1,     29,   59.02,      simple conversion with all three, seconds with hundredths
+"1:29:59.1",  1,     29,    59.1,      simple conversion with all three, seconds with tenths
+"",           0,      0,       0,      simple conversion with all equal to zero
+"29:59",     -5,     29,      59,      negative hours is ignored
+"1:00:59",    1,    -29,      59,      negative minutes is ignored
+"1:29:00",    1,     29,     -59,      negative seconds are ignored

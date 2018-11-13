@@ -1,0 +1,4 @@
+expected,   DistanceType, comment
+kilometers, kilometers,   kilometers should get you kilometers
+miles,      miles,        miles should get you miles
+kilometers, junk,         incorrect input should default to kilometers

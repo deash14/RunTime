@@ -1,0 +1,11 @@
+Hours, Minutes, Seconds, Distance, DistanceType, SplitDistanceType, SplitDistance, initialSplitData, ExpectedDataFile,   Expected, Comment
+ 1,    29,      59,      13.1,     miles,        miles,             1,             false,            calcSplitTest1.csv, true,     13.1 miles at ~6:52 per mile pace
+ 1,    29,      59,      13.1,     miles,        miles,             0.25,          false,            calcSplitTest2.csv, true,     13.1 miles at ~4:16 per km pace
+ 1,    29,      59,      13.1,     km,           km,                1,             false,            calcSplitTest3.csv, true,     13.1 km at ~11:03 per mile pace
+ 1,    29,      59,      13.1,     km,           km,                5,             false,            calcSplitTest4.csv, true,     13.1 km  at ~6:52 per km pace
+ 1,    29,      59,      13.1,     miles,        miles,             1,             true,             calcSplitTest1.csv, true,     13.1 miles at ~6:52 per mile pace
+-1,    29,      59,      13.1,     km,           km,                5,             false,            calcSplitTest0.csv, false,    negative hours should fail
+ 1,   -29,      59,      13.1,     km,           km,                5,             false,            calcSplitTest0.csv, false,    negative minutes should fail
+ 1,    29,     -59,      13.1,     km,           km,                5,             false,            calcSplitTest0.csv, false,    negative seconds should fail
+ 1,    29,      59,     -13.1,     km,           km,                5,             false,            calcSplitTest0.csv, false,    negative distance should fail
+ 1,    29,      59,      13.1,     km,           km,               -5,             false,            calcSplitTest0.csv, false,    negative split distance should fail

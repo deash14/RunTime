@@ -1,0 +1,12 @@
+timeString,      hours, minutes, seconds, Comment
+1:29:59,         1,     29,      59,      Valid test with hours, minutes, and seconds.
+29:59,           0,     29,      59,      Valid test with minutes, and seconds.
+59.95,           0,      0,      59.95,   Valid test with seconds to hundreths.
+89:59.99,        0,     89,      59.99,   Valid test with minutes over 60 but it doesn't switch over to hours, as designed.
+-1:44:23.444421, 0,      0,      0,       Invalid timestring -negative hours.
+1:-44:23.546,    0,      0,      0,       Invalid timestring -negative minutes.
+1:44:-23,        0,      0,      0,       Invalid timestring -negative seconds.
+A:44:23,         0,      0,      0,       Invalid timestring -hours not a number.
+1:4S:23,         0,      0,      0,       Invalid timestring -minutes not a number.
+1:44:2H,         0,      0,      0,       Invalid timestring -seconds not a number.
+1:2:3:4,         0,      0,      0,       Invalid timestring -too many colons.

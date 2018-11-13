@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf", "Wpf\Wpf.csproj", "{758F12EE-6825-4B4C-89B7-BB8AF30CA479}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F65E9A00-02A5-4DE4-AD20-0DC794ED584E} = {F65E9A00-02A5-4DE4-AD20-0DC794ED584E}
+		{FD46E90D-435A-4786-8CF8-80A7D418C007} = {FD46E90D-435A-4786-8CF8-80A7D418C007}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{7F2AE66A-6412-4E29-9960-28C9AE2E7073}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{F65E9A00-02A5-4DE4-AD20-0DC794ED584E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelTest", "Model\ModelTest\ModelTest.csproj", "{FD46E90D-435A-4786-8CF8-80A7D418C007}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CD8244B-D52C-4851-AEA5-63E358FB5B7E}"
+	ProjectSection(SolutionItems) = preProject
+		TestSettings1.testsettings = TestSettings1.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Testing Metrics", "Unit Testing Metrics", "{CC0960B8-6A7A-41CC-9B03-EDE2C2C2B8A0}"
+	ProjectSection(SolutionItems) = preProject
+		OpenCover.bat = OpenCover.bat
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModelsTest", "ViewModels\ViewModelsTest\ViewModelsTest.csproj", "{2A147670-19A4-4A79-9942-6075B13E7BD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{758F12EE-6825-4B4C-89B7-BB8AF30CA479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{758F12EE-6825-4B4C-89B7-BB8AF30CA479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{758F12EE-6825-4B4C-89B7-BB8AF30CA479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{758F12EE-6825-4B4C-89B7-BB8AF30CA479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F2AE66A-6412-4E29-9960-28C9AE2E7073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F2AE66A-6412-4E29-9960-28C9AE2E7073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F2AE66A-6412-4E29-9960-28C9AE2E7073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F2AE66A-6412-4E29-9960-28C9AE2E7073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F65E9A00-02A5-4DE4-AD20-0DC794ED584E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65E9A00-02A5-4DE4-AD20-0DC794ED584E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65E9A00-02A5-4DE4-AD20-0DC794ED584E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65E9A00-02A5-4DE4-AD20-0DC794ED584E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD46E90D-435A-4786-8CF8-80A7D418C007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD46E90D-435A-4786-8CF8-80A7D418C007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD46E90D-435A-4786-8CF8-80A7D418C007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD46E90D-435A-4786-8CF8-80A7D418C007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A147670-19A4-4A79-9942-6075B13E7BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A147670-19A4-4A79-9942-6075B13E7BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A147670-19A4-4A79-9942-6075B13E7BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A147670-19A4-4A79-9942-6075B13E7BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC0960B8-6A7A-41CC-9B03-EDE2C2C2B8A0} = {4CD8244B-D52C-4851-AEA5-63E358FB5B7E}
+	EndGlobalSection
+EndGlobal

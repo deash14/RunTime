@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="Wpf.RequiredTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Wpf"
+             mc:Ignorable="d"
+             d:DesignHeight="23"
+             d:DesignWidth="120"
+             KeyboardNavigation.TabNavigation="Local"
+             >
+    <Grid>
+        <TextBox x:Name="timeString" 
+                 Height="23" 
+                 TextWrapping="Wrap" 
+                 Width="120"
+                 Text="{Binding TextInControl, 
+                                RelativeSource={RelativeSource AncestorType=UserControl}, 
+                                UpdateSourceTrigger=PropertyChanged, 
+                                Mode=TwoWay}">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="BorderBrush" Value="LightCyan"/>
+                    <Setter Property="Background" Value="White"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsRequired, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                     Value="True"
+                        >
+                            <Setter Property="BorderBrush" Value="PaleGreen"/>
+                            <Setter Property="Background" Value="White"/>
+                        </DataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition 
+                                    Binding="{Binding IsRequired, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                    Value="false"
+                                    />
+                                <Condition 
+                                    Binding="{Binding TextInControl, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                                    Value=""
+                                    />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="BorderBrush" Value="Red"/>
+                            <Setter Property="Background" Value="Snow"/>
+                        </MultiDataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+    </Grid>
+</UserControl>

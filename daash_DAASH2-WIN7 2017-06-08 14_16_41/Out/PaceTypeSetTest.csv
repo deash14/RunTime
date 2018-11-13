@@ -1,0 +1,4 @@
+expected,            paceType,            comment
+minutesPerMile,      minutesPerMile,      minutesPerMile should get you minutesPerMile
+minutesPerKilometer, minutesPerKilometer, minutesPerKilometer should get you minutesPerKilometer
+minutesPerKilometer, junk,                incorrect input should default to minutesPerKilometer

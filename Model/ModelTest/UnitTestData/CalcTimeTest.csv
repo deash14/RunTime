@@ -1,0 +1,12 @@
+Hours, Minutes, Seconds, Distance, DistanceType, PaceType, PaceHours, PaceMinutes, PaceSeconds, Comment
+ 1,    29,      59,      13.1,     miles,        perMile,  0,         6,            52.137405,  13.1 miles at ~6:52 per mile pace
+ 1,    29,      59,      13.1,     miles,        perKm,    0,         4,            16.090947,  13.1 miles at ~4:16 per km pace
+ 1,    29,      59,      13.1,     km,           perMile,  0,        11,             3.271064,  13.1 km at ~11:03 per mile pace
+ 1,    29,      59,      13.1,     km,           perKm,    0,         6,            52.137405,  13.1 km  at ~6:52 per km pace
+ 1,    29,      59,      13.1,     miles,        perMile,  0,         0,           412.137405,  13.1 miles  at ~412 seconds per km pace
+ 0,     0,       0,      13.1,     miles,        perMile, -1,         0,             0,         negative hours should just return with time blanked
+ 0,     0,       0,      13.1,     miles,        perKm,    0,        -4,            16.090947,  negative minutes should just return with time blanked
+ 0,     0,       0,      13.1,     km,           perMile,  0,        11,            -3.271064,  negative seconds should just return with time blanked
+ 0,     0,       0,     -13.1,     km,           perKm,    0,         6,            52.137405,  negative distance should just return with time blanked 
+ 0,     0,       0,         0,     km,           perKm,    0,         6,            52.137405,  zero distance should just return with time blanked 
+ 0,     0,       0,      13.1,     km,           perKm,    0,         0,                    0,  zero pace should just return with time blanked 

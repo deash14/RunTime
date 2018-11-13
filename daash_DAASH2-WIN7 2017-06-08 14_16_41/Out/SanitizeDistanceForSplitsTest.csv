@@ -1,0 +1,5 @@
+Distance, Expected,  DistanceType, SplitDistanceType, Comment
+ 1,       1.609,     miles,        kilometers,        Mismatch test, test only verifies out to 3 decimal places.
+ 1.609,   1,         kilometers,   miles,             Mismatch test.
+ 1.6,     1.6,       kilomters,    kilometers,        non-mismatch, km
+ 1,       1,         miles,        miles,             non-mismatch, statuet

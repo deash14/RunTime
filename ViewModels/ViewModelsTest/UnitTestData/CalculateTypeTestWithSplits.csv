@@ -1,0 +1,2 @@
+Expected,  Time,      Distance, DistanceType, PaceType,            Pace,           CalcType, SplitDistance, Comment
+"6:52.14", "1:29:59", "13.1",   miles,        minutesPerMile,      "0",            pace,     13.1,          tests that calculating pace works & calculating splits.
