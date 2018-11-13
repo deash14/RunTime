@@ -35,23 +35,23 @@
                      VerticalAlignment="Top"
                      Margin="34,50,0,0"
                      GroupName="CalculationType"
-                     IsChecked="{Binding CalcPace, UpdateSourceTrigger=PropertyChanged}" Height="16" Width="41"/>
+                     IsChecked="{Binding CalcPace, UpdateSourceTrigger=PropertyChanged}" Height="16" Width="50"/>
         <RadioButton x:Name="calcDistance"
                      TabIndex="2"
                      Content="Distance"
                      HorizontalAlignment="Left"
                      VerticalAlignment="Top"
-                     Margin="80,50,0,0"
+                     Margin="89,50,0,0"
                      GroupName="CalculationType"
-                     IsChecked="{Binding CalcDistance, UpdateSourceTrigger=PropertyChanged}" Height="16" Width="61"/>
+                     IsChecked="{Binding CalcDistance, UpdateSourceTrigger=PropertyChanged}" Height="16" Width="69"/>
         <RadioButton x:Name="calcTime"
                      TabIndex="3"
                      Content="Time"
                      HorizontalAlignment="Left"
                      VerticalAlignment="Top"
-                     Margin="146,50,0,0"
+                     Margin="163,50,0,0"
                      GroupName="CalculationType"
-                     IsChecked="{Binding CalcTime, UpdateSourceTrigger=PropertyChanged}" Height="16" Width="42"/>
+                     IsChecked="{Binding CalcTime, UpdateSourceTrigger=PropertyChanged}" Height="16" Width="50"/>
         <Separator HorizontalAlignment="Left"
                    VerticalAlignment="Top"
                    Height="18"
